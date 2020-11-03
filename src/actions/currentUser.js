@@ -2,7 +2,7 @@ import { resetLoginForm } from './loginForm'
 import { resetSignupForm } from './signupForm'
 import { getVideoGames, clearVideoGames } from '../videoGames'
 
-//synchronous action creators
+//sync action creators
 // function that takes in a user as an object and returns and action type
 // type matches whats in the reducer - "SET_CURRENT_USER"
 export const setCurrentUser = user => {
@@ -47,7 +47,7 @@ export const login = (credentials, history) => {
     }
 }
 
-// sign up
+
 export const signup = (credentials, history) => {
     console.log("credentials:", credentials)
     return dispatch => {
@@ -77,7 +77,7 @@ export const signup = (credentials, history) => {
     }
 }
 
-// log out
+
 export const logout = (event) => {
 
     return dispatch => {
@@ -91,7 +91,7 @@ export const logout = (event) => {
     }
 }
 
-// get current user
+
 export const getCurrentUser = () => {
     return dispatch => {
         return fetch("http://localhost:3002/get_current_user", {
