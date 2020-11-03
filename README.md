@@ -1,5 +1,5 @@
 # Oracle Game Library
-Click [here](https://github.com/Cashman1396/React-Redux-VideoGameAPI)
+Click [here](https://github.com/Cashman1396/React-Redux_VideoGameAPI)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
