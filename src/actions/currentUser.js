@@ -1,6 +1,6 @@
 import { resetLoginForm } from './loginForm'
 import { resetSignupForm } from './signupForm'
-import { getVideoGames, clearVideoGames } from '../videoGames'
+import { getVideoGames, clearVideoGames } from './videoGames'
 
 //sync action creators
 // function that takes in a user as an object and returns and action type

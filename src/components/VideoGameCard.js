@@ -9,7 +9,7 @@ const VideoGameCard = ({ videoGame }) => {
                     <h3>{videoGame.attributes.game_name}</h3>
                     <p>{videoGame.attributes.year_released}</p>
                     <p>{videoGame.attributes.game_genre}</p>
-                    <p>{videoGame.attributes.image_url}</p>
+                    <p><img src={videoGame.attributes.image_url} alt="cover img"></img></p>
                     <p>{videoGame.attributes.game_rating}</p>
                     <p>{videoGame.attributes.game_platform}</p>
                     <p>{videoGame.attributes.description}</p>
