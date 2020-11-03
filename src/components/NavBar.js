@@ -1,10 +1,9 @@
 import React from 'react'
-
 import Logout from './Logout'
 import { connect } from 'react-redux'
 import { NavLink, Link } from 'react-router-dom'
 
-//functional component
+
 
 const NavBar = ({currentUser, loggedIn}) => {
     return (
