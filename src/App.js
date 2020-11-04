@@ -1,7 +1,10 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import { getCurrentUser } from './actions/currentUser'
+import { Route, Switch, withRouter } from 'react-router-dom'
 import NavBar from './components/NavBar'
 import Home from './components/Home'
-import Login from './components/LoginForm'
+import Login from './components/Login'
 import Signup from './components/Signup'
 import Welcome from './components/Welcome'
 import VideoGames from './components/VideoGames'
@@ -9,9 +12,7 @@ import NewGameFormWrap from './components/NewGameFormWrap'
 import EditGameFormWrap from './components/EditGameFormWrap'
 import VideoGameCard from './components/VideoGameCard'
 import './index.css'
-import { connect } from 'react-redux'
-import { getCurrentUser } from './actions/currentUser'
-import { Route, Switch, withRouter } from 'react-router-dom'
+
 
 
 class App extends Component {
