@@ -1,5 +1,9 @@
 body {
   margin: 0;
+  padding: 0;
+  background-color: grey;
+  text-align: center;
+  align-items: center;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -7,7 +11,86 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.logo {
+  text-align: left;
+  font-weight: 500;
+}
+
+.home {
+  padding: auto;
+  background-repeat: none;
+}
+
+a:hover {
+  color: red;
+}
+
+
+.btn {
+  margin: 12px;
+  background-color: silver;
+}
+
+.nav-item {
+  text-align: right;
+  padding: 10px;
+}
+.card {
+  border: 5px solid;
+  margin: 30px;
+  background-size: cover;
+}
+
+.videoGame-card {
+  padding: 10px 5px;
+  margin: 10px;
+  width: auto;
+  position: center;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  padding: 20px;
+}
+
+img {
+  position: center;
+  margin: 50px;
+  height: 450px;
+  width: auto;
+  
+}
+
+.welcome {
+  padding: 40px; 
+  height: 500px;
+}
+
+.gamesbox {
+  margin: 30px;
+  border: 3px solid black;
+  background-color: white;
+  opacity: 0.8;
+  padding-bottom: 20px;
+  border-radius: inherit;
+}
+
+.square {
+  float: left;
+  width: 350px;
+}
+
+
+.form {
+  padding: 35px;
+  margin: 10px;
 }

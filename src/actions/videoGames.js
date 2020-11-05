@@ -20,7 +20,7 @@ export const addVideoGame = (videoGame) => {
     } 
 }
 
-export const updateVideoGameSuccess = (videoGame) => {
+export const updateVideoGameApprove = (videoGame) => {
     return {
         type: "UPDATE_VIDEO_GAME",
         videoGame
@@ -28,7 +28,7 @@ export const updateVideoGameSuccess = (videoGame) => {
 }
 
 //only fires on successful update
-export const deleteVideoGameSuccess = (videoGameId) => {
+export const deleteVideoGameApprove = (videoGameId) => {
     return {
         type: "DELETE_VIDEO_GAME",
         videoGameId
@@ -59,6 +59,7 @@ export const getVideoGames = () => {
     }
 }
 
+//POST REQUEST TO CREATE A NEW GAME TO THE LIBRARY
 export const createVideoGame = (videoGameData, history) => {
     return dispatch => {
         const updatedRailsData = {
@@ -73,6 +74,8 @@ export const createVideoGame = (videoGameData, history) => {
                 user_id: videoGameData.userId
             }
         }
+
+        // GET REQUEST to the VIDEO GAME API TO FETCH ALL GAMES IN SEED AND CREATED
         return fetch("http://localhost:3002/video_games/", {
             credentials: "include",
             method: "POST",
@@ -88,9 +91,9 @@ export const createVideoGame = (videoGameData, history) => {
             } else {
                 // console.log("this is resp.data for create VG", resp.data) 
                 dispatch(addVideoGame(resp.data))
-                dispatch(getVideoGames()) //breaks if i comment this out
+                dispatch(getVideoGames()) 
                 dispatch(resetNewVideoGameForm())
-                history.push(`/videoGames/${resp.data.id}`) //NOW IT'S NOT RECOGNIZING HISTORY.PUSH 
+                history.push(`/videoGames/${resp.data.id}`) 
                 alert("Game has been added!")
               
             }
@@ -99,6 +102,7 @@ export const createVideoGame = (videoGameData, history) => {
     }
 }
 
+//UPDATE REQUEST WHEN EDITING VIDEO GAME FORM
 export const updateVideoGame = (videoGameData, history) => {
     return dispatch => {
         const updatedRailsData = {
@@ -125,8 +129,8 @@ export const updateVideoGame = (videoGameData, history) => {
             if (resp.error) {
                 alert(resp.error)
             } else {
-                dispatch(updateVideoGameSuccess(resp.data))
-                // dispatch(resetNewVideoGameForm())
+                dispatch(updateVideoGameApprove(resp.data))
+                
                 history.push(`/videoGames/${resp.data.id}`) 
             }
         })
@@ -134,6 +138,7 @@ export const updateVideoGame = (videoGameData, history) => {
     }
 }
 
+//DELETE REQUEST TO DELETE A GAME IN THE CURRENT USER LIBRARY
 export const deleteVideoGame = (videoGameId, history) => {
     return dispatch => {
         return fetch(`http://localhost:3002/video_games/${videoGameId}`, {
@@ -148,8 +153,8 @@ export const deleteVideoGame = (videoGameId, history) => {
             if (resp.error) {
                 alert(resp.error)
             } else {
-                dispatch(deleteVideoGameSuccess(videoGameId))
-                // dispatch(resetNewVideoGameForm())
+                dispatch(deleteVideoGameApprove(videoGameId))
+                
                 history.push('/videoGames') 
             }
         })

@@ -1,6 +1,6 @@
 import { createStore, applyMiddleware, combineReducers } from 'redux'
 import currentUser from './reducers/currentUser'
-import loginForm from './reducers/loginFormReducer'
+import loginForm from './reducers/loginReducer'
 import videoGames from './reducers/videoGamesReducer'
 import signupForm from './reducers/signupFormReducer'
 import newVideoGameForm from './reducers/newVideoGameFormReducer'

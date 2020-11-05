@@ -1,3 +1,4 @@
+// component for Navigation Bar
 import React from 'react'
 import Logout from './Logout'
 import { connect } from 'react-redux'

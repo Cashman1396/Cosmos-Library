@@ -4,7 +4,7 @@ const initialState = {
     password: ""
 }
 
-const loginFormReducer = (state = initialState, action) => {
+const loginReducer = (state = initialState, action) => {
     switch(action.type) {
         case "UPDATE_LOGIN_FORM":
             return action.formData
@@ -15,4 +15,4 @@ const loginFormReducer = (state = initialState, action) => {
     }
 }
 
-export default loginFormReducer
+export default loginReducer
