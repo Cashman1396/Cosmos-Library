@@ -1,3 +1,4 @@
+//sychronous
 import { resetNewVideoGameForm } from './newVideoGameForm'
 
 export const setVideoGames = videoGames => {
@@ -35,7 +36,7 @@ export const deleteVideoGameApprove = (videoGameId) => {
     } 
 }
 
-//async
+//asynchronous fetch is always async
 export const getVideoGames = () => {
     return dispatch => {
         return fetch("http://localhost:3002/video_games", {

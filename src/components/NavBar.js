@@ -5,7 +5,7 @@ import { connect } from 'react-redux'
 import { NavLink, Link } from 'react-router-dom'
 
 
-
+// controls the current User's navigation bar
 const NavBar = ({currentUser, loggedIn}) => {
     return (
         <nav className="nav-wrapper grey darken-4">

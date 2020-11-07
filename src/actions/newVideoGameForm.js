@@ -1,3 +1,4 @@
+// works in tandem with the videogame to edit and change the form data that gets entered into it
 export const updateNewVideoGameForm = (name, value) => {
     const formData = { name, value }
     return {

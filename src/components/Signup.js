@@ -1,3 +1,4 @@
+// component for signup 
 import React from 'react'
 import { connect } from 'react-redux'
 import { updateSignupForm } from '../actions/signupForm' //import action creator
