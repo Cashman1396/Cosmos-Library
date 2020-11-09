@@ -1,3 +1,4 @@
+//sets the initial state of the form
 const initialState = {
     username: "",
     email: "",

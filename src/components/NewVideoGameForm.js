@@ -21,14 +21,14 @@ const NewVideoGameForm = ({ formData, updateNewVideoGameForm, userId, handleSubm
                 <div className="transbox">
                     <h1>{editMode ? "Update the Library" : "Add to the Library"}</h1>
                     <input type="text" name="gameName" placeholder="Name" onChange={handleChange} value={gameName}/>
-                    <input type="number" name="yearReleased" placeholder="Year Release(d)" onChange={handleChange} value={yearReleased}/>
+                    <input type="number" name="yearReleased" placeholder="Year Released" onChange={handleChange} value={yearReleased}/>
                     <input type="text" name="gameGenre" placeholder="Genre" onChange={handleChange} value={gameGenre}/>
                     <input type="text" name="imageUrl" placeholder="Image Address" onChange={handleChange} value={imageUrl}/>
                     <input type="text" name="gameRating" placeholder="Rating" onChange={handleChange} value={gameRating}/>
                     <input type="text" name="gamePlatform" placeholder="Platform" onChange={handleChange} value={gamePlatform}/>
-                    <input type="text area" name="description" placeholder="Description" onChange={handleChange} value={description}/>
+                    <input type="text" name="description" placeholder="Description" onChange={handleChange} value={description}/>
 
-                    <input className="btn" type="submit" value={editMode ? "Update Game" : "Add Game"}/>
+                    <input className="btn" type="submit" value={editMode ? "Update Item" : "Add Item"}/>
                 </div>
             </form>
         </div>

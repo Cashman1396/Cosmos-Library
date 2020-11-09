@@ -2,7 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { updateLoginForm } from '../actions/loginForm' 
 import { login } from '../actions/currentUser' 
-
+// login page component 
 const Login = ({ loginForm, updateLoginForm, login, history }) => {
 
     const handleChange = (event) => {
@@ -20,7 +20,7 @@ const Login = ({ loginForm, updateLoginForm, login, history }) => {
     }
 
     return (
-        <form className="login-form card form" onSubmit={handleSubmit}>
+        <form className="login-Form card form" onSubmit={handleSubmit}>
             <input type="text" name="username" placeholder="Username" value={loginForm.username} onChange={handleChange} />
             <input type="email" name="email" placeholder="Email" value={loginForm.email} onChange={handleChange} />
             <input type="password" name="password" placeholder="Password" value={loginForm.password} onChange={handleChange} />
@@ -30,7 +30,7 @@ const Login = ({ loginForm, updateLoginForm, login, history }) => {
     )
 }
 
-
+// maps the states to the current user 
 const mapStateToProps = state => {
     return {
         loginForm: state.loginForm

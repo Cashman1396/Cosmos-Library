@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import { logout } from '../actions/currentUser' 
 import { withRouter } from 'react-router-dom' 
 
-
+// logout page 
 const Logout = ({ logout, history }) => {
 
     return (

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const VideoGameCard = ({ videoGame }) => {
     return (
         videoGame ? 
-            <div className="card ">
+            <div className="card">
                 <div className="gamesbox">
                     <p><img src={videoGame.attributes.image_url} alt="cover art"></img></p>
                     <h3>{videoGame.attributes.game_name}</h3>

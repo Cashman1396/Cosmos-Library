@@ -22,7 +22,7 @@ const Signup = ({ signupForm, updateSignupForm, signup, history }) => {
     }
 
     return (
-        <div className="signup-form row">
+        <div className="signup-Form row">
             <form className="form card" onSubmit={handleSubmit}>
                 <input type="text" name="username" placeholder="Username" value={signupForm.username} onChange={handleChange} />
                 <input type="email" name="email" placeholder="Email" value={signupForm.email} onChange={handleChange} />
@@ -34,7 +34,7 @@ const Signup = ({ signupForm, updateSignupForm, signup, history }) => {
     )
 }
 
-
+// maps the signup state 
 const mapStateToProps = state => {
     return {
         signupForm: state.signupForm

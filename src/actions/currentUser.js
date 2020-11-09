@@ -38,7 +38,7 @@ export const login = (credentials, history) => {
                 dispatch(setCurrentUser(resp.data))
                 dispatch(getVideoGames())
                 dispatch(resetLoginForm())
-                history.push('/loggedInWelcome')
+                history.push('/Welcome')
             }
         }
         )

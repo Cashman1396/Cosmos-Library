@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom'
 
 const VideoGames = (props) => {
     
+    //props showing all the videogames in the array
     const videoGameCards = props.videoGames.length > 0 ?     
 props.videoGames.map(vg => 
     (<div className="videoGame-card" key={vg.id}>
