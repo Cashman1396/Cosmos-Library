@@ -1,3 +1,5 @@
+// action creator for the sign up
+
 export const updateSignupForm = (formData) => {
     
     return {

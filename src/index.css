@@ -4,10 +4,15 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-color: grey;
+  background-color: black;
   text-align: center;
   justify-content: center;
   align-items: center;
+  background-image: url(https://images.wallpapersden.com/image/download/space-galaxy_a25rbWuUmZqaraWkpJRobWllrWdma2U.jpg);
+  background-repeat: no-repeat;
+  background-size: 2450px;
+  /*color: silver; */
+  background-position: center;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -22,7 +27,7 @@ code {
 
 nav a.active{
   
-  transition: all ease 0.3s;
+  transition: all ease 1s;
 }
 
 .btn {
@@ -38,9 +43,12 @@ nav a.active{
 }
 
 .btn:hover{
-  background-color: rgb(62, 17, 73);
+  background-color: silver;
 }
 
+.nav-item {
+  font-size: 18px;
+}
 
 .logo{
   font-weight: 500;
@@ -57,17 +65,16 @@ img {
 }
 
 a:hover {
-  color: red;
+  color: rgb(255, 49, 49);
 }
 
-
+/* home page color text and border */
 .card{
-  border: #fff 5px solid;
+  border: silver 5px solid;
   margin: 30px;
   border-radius: 10px;
- 
-  
-  background-color:rgba(192,192,192,0.3);
+  background-image: url(https://images.wallpapersden.com/image/download/space-galaxy_a25rbWuUmZqaraWkpJRobWllrWdma2U.jpg);
+  color: black;
 }
 
 .form{
@@ -90,17 +97,19 @@ a:hover {
   width: auto;
   position: center;
   border-radius: 10px;
-  border: midnightblue solid 5px;
+  border: silver solid 5px;
   display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
-  
+  background-color: black;
+  opacity: 0.75;
   background-size: 300px 200px;
+
 }
 
 .square {
-  float:left;
+  float: left;
   width: 300px;
   height: 100px;
   padding: 5%; 
@@ -112,17 +121,18 @@ a:hover {
   white-space: wrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  
 }
 
 .gamesbox {
   margin: 30px;
   padding-bottom: 40px;
-  background-color: white;
-  border: 2px solid black;
+  color: silver;
+  /* border: 2px solid silver; */
   border-radius: inherit;
   opacity: 0.8;
 }
 
 .signup-Form, .login-Form, input{
-  color: darkred;
+  color: silver;
 }

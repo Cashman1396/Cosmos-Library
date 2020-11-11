@@ -92,7 +92,7 @@ export const logout = (event) => {
     }
 }
 
-//returns the current user 
+//action creator for the current user 
 export const getCurrentUser = () => {
     return dispatch => {
         return fetch("http://localhost:3002/get_current_user", {

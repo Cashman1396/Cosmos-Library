@@ -16,7 +16,7 @@ const newVideoGameFormReducer = (state=initialState, action) => {
             ...state,
             [action.formData.name]: action.formData.value
         }    
-        // console.log("new VG form reducer returnVal:", returnVal)
+        // console.log("new VG form reducer returnValue:", returnValue)
         return returnValue
             
         case "RESET_NEW_VIDEO_GAME_FORM":

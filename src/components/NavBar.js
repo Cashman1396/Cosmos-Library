@@ -8,12 +8,12 @@ import { NavLink, Link } from 'react-router-dom'
 // controls the current User's navigation bar
 const NavBar = ({currentUser, loggedIn}) => {
     return (
-        <nav className="nav-wrapper grey darken-1">
+        <nav className="nav-wrapper grey darken-5">
             <div className="collapse navbar-collapse">
                 <Link className="logo left" to='/Welcome'>🌑 <span role="img" aria-label=""></span>Oracle Library</Link>
                 <ul className="collapse navbar-collapse right">
-                    <li className="nav-item"> <NavLink exact to="/videoGames">My Games Library</NavLink></li>
-                    <li className="nav-item"> <NavLink exact to="/videoGames/new">Add Video Game</NavLink></li>
+                    <li className="nav-item"> <NavLink exact to="/videoGames">My Media Library</NavLink></li>
+                    <li className="nav-item"> <NavLink exact to="/videoGames/new">Add Game</NavLink></li>
                     <li className="nav-item"> {currentUser ? `Welcome ${currentUser.attributes.username}!` : ""}</li>
                     <li className="nav-item"> { loggedIn ? <Logout/> : null }</li>
                 </ul>
@@ -23,7 +23,7 @@ const NavBar = ({currentUser, loggedIn}) => {
 }
 
 
-
+// currentUser reducer 
 const mapStateToProps = ({currentUser}) => {
     return {
         currentUser,

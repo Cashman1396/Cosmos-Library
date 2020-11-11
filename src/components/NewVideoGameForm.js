@@ -18,7 +18,7 @@ const NewVideoGameForm = ({ formData, updateNewVideoGameForm, userId, handleSubm
                 event.preventDefault()
                 handleSubmit(formData)
                 }}>
-                <div className="transbox">
+                <div className="gamesbox">
                     <h1>{editMode ? "Update the Library" : "Add to the Library"}</h1>
                     <input type="text" name="gameName" placeholder="Name" onChange={handleChange} value={gameName}/>
                     <input type="number" name="yearReleased" placeholder="Year Released" onChange={handleChange} value={yearReleased}/>
