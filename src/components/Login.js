@@ -30,7 +30,7 @@ const Login = ({ loginForm, updateLoginForm, login, history }) => {
     )
 }
 
-// maps the states to the current user 
+// maps the states to the current user and turns into props
 const mapStateToProps = state => {
     return {
         loginForm: state.loginForm

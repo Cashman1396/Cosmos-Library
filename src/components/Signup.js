@@ -34,7 +34,7 @@ const Signup = ({ signupForm, updateSignupForm, signup, history }) => {
     )
 }
 
-// maps the signup state 
+// maps the signup state and turns it into props 
 const mapStateToProps = state => {
     return {
         signupForm: state.signupForm

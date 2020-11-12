@@ -17,7 +17,7 @@ props.videoGames.map(vg =>
     return videoGameCards
 }
 
-
+// takes a slice of the videoGames state then maps into props
 const mapStateToProps = (state) => {
     return {
         videoGames: state.videoGames

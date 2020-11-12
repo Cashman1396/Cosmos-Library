@@ -30,6 +30,10 @@ nav a.active{
   transition: all ease 1s;
 }
 
+.nav-wrapper {
+  background-color: midnightblue;
+}
+
 .btn {
   margin: 10px;
   background-color: midnightblue;

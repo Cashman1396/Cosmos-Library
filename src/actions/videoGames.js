@@ -1,5 +1,4 @@
 // action creator for the all video creator
-
 //sychronous
 import { resetNewVideoGameForm } from './newVideoGameForm'
 

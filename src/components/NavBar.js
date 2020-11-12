@@ -8,7 +8,7 @@ import { NavLink, Link } from 'react-router-dom'
 // controls the current User's navigation bar
 const NavBar = ({currentUser, loggedIn}) => {
     return (
-        <nav className="nav-wrapper grey darken-5">
+        <nav className="nav-wrapper">
             <div className="collapse navbar-collapse">
                 <Link className="logo left" to='/Welcome'>🌑 <span role="img" aria-label=""></span>Oracle Library</Link>
                 <ul className="collapse navbar-collapse right">
