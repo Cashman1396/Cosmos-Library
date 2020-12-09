@@ -54,7 +54,7 @@ export const signup = (credentials, history) => {
         const userInfo = {
             user: credentials
         }
-        return fetch("http://localhost:3002/signup", {
+        return fetch("https://oracle-lib-api.herokuapp.com/video_games/signup", {
             credentials: "include",
             method: "POST",
             headers: {
@@ -85,7 +85,7 @@ export const logout = (event) => {
         dispatch(clearCurrentUser())
         dispatch(clearVideoGames())
 
-        return fetch("http://localhost:3002/logout", {
+        return fetch("https://oracle-lib-api.herokuapp.com/logout", {
             credentials: "include",
             method: "DELETE"
         })
@@ -95,7 +95,7 @@ export const logout = (event) => {
 //action creator for the current user 
 export const getCurrentUser = () => {
     return dispatch => {
-        return fetch("http://localhost:3002/get_current_user", {
+        return fetch("https://oracle-lib-api.herokuapp.com/get_current_user", {
             credentials: "include",
             method: "GET",
             headers: {
@@ -116,3 +116,4 @@ export const getCurrentUser = () => {
         .catch(console.log)
     }
 }
+

@@ -8,7 +8,7 @@ import store from './store'
 import { BrowserRouter } from 'react-router-dom'
 
 
-
+console.log(store)
 
 
 ReactDOM.render(

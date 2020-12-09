@@ -17,7 +17,7 @@ import './index.css'
 
 class App extends Component {
   componentDidMount(){
-    this.props.getCurrentUser()
+    this.props.boundGetCurrentUser()
   }
 
   render() {
@@ -61,4 +61,10 @@ const mapStateToProps = (state) => {
   })
 }
 
-export default withRouter(connect(mapStateToProps, { getCurrentUser })(App))
+const mapDispatchToProps = dispatch => {
+  return {
+    boundGetCurrentUser: () => dispatch(getCurrentUser())
+  }
+}
+
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App))

@@ -8,7 +8,7 @@ const VideoGameCard = ({ videoGame }) => {
             <div className="card">
                 <div className="gamesbox">
                     <p><img src={videoGame.attributes.image_url} alt="cover art"></img></p>
-                    <h3>{videoGame.attributes.game_name}</h3>
+                    <h2>{videoGame.attributes.game_name}</h2>
                     <p>Year: {videoGame.attributes.year_released}</p>
                     <p>Genre: {videoGame.attributes.game_genre}</p>
                     <p>Rated: {videoGame.attributes.game_rating}</p>

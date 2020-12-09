@@ -2,7 +2,9 @@ import React from 'react';
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 
-
+// You can do this, Take a deep breath and you got this
+// You are the Oracle, you know what you know
+// You Will Pass
 
 const VideoGames = (props) => {
     

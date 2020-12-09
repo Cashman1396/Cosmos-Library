@@ -78,7 +78,7 @@ export const createVideoGame = (videoGameData, history) => {
         }
 
         // GET REQUEST to the VIDEO GAME API TO FETCH ALL GAMES IN SEED AND CREATED
-        return fetch("http://localhost:3002/video_games/", {
+        return fetch("https://oracle-lib-api.herokuapp.com/video_games/", {
             credentials: "include",
             method: "POST",
             headers: {
@@ -118,7 +118,7 @@ export const updateVideoGame = (videoGameData, history) => {
                 year_released: videoGameData.yearReleased
             }
         }
-        return fetch(`http://localhost:3002/video_games/${videoGameData.videoGameId}`, {
+        return fetch(`https://oracle-lib-api.herokuapp.com/video_games/${videoGameData.videoGameId}`, {
             credentials: "include",
             method: "PATCH",
             headers: {
@@ -143,7 +143,7 @@ export const updateVideoGame = (videoGameData, history) => {
 //DELETE REQUEST TO DELETE A GAME IN THE CURRENT USER LIBRARY
 export const deleteVideoGame = (videoGameId, history) => {
     return dispatch => {
-        return fetch(`http://localhost:3002/video_games/${videoGameId}`, {
+        return fetch(`https://oracle-lib-api.herokuapp.com/video_games/${videoGameId}`, {
             credentials: "include",
             method: "DELETE",
             headers: {

@@ -5,6 +5,7 @@ import { presetEditFormData, resetNewVideoGameForm } from '../actions/newVideoGa
 import { connect } from 'react-redux'
 
 // doing a react lifecycle process 
+// edits/updaes the game form (path method)
 class EditVideoGameFormWrap extends React.Component {
     componentDidMount() {
         this.props.videoGame && this.props.presetEditFormData(this.props.videoGame)

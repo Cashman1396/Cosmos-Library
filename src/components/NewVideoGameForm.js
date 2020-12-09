@@ -11,6 +11,7 @@ const NewVideoGameForm = ({ formData, updateNewVideoGameForm, userId, handleSubm
         const {name, value} = event.target
         updateNewVideoGameForm(name, value) 
     }
+
 // want to add in series input into the form to work as well
 // want to add in an addition information field
     return (
