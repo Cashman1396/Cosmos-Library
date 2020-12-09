@@ -22,7 +22,7 @@ export const clearCurrentUser = () => {
 export const login = (credentials, history) => {
     
     return dispatch => {
-        return fetch("http://localhost:3002/login", {
+        return fetch("https://oracle-lib-api.herokuapp.com/login", {
             credentials: "include",
             method: "POST",
             headers: {
@@ -54,7 +54,7 @@ export const signup = (credentials, history) => {
         const userInfo = {
             user: credentials
         }
-        return fetch("https://oracle-lib-api.herokuapp.com/video_games/signup", {
+        return fetch("https://oracle-lib-api.herokuapp.com/signup", {
             credentials: "include",
             method: "POST",
             headers: {
