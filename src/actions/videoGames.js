@@ -40,7 +40,7 @@ export const deleteVideoGameApprove = (videoGameId) => {
 //asynchronous fetch is always async
 export const getVideoGames = () => {
     return dispatch => {
-        return fetch("http://localhost:3002/video_games", {
+        return fetch("https://oracle-lib-api.herokuapp.com/video_games", {
             credentials: "include",
             method: "GET",
             headers: {
