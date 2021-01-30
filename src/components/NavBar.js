@@ -10,7 +10,7 @@ const NavBar = ({currentUser, loggedIn}) => {
     return (
         <nav className="nav-wrapper">
             <div className="collapse navbar-collapse">
-                <Link className="logo left" to='/Welcome'>🌑 <span role="img" aria-label=""></span>Oracle Library</Link>
+                <Link className="logo left" to='/Welcome'>🌑 <span role="img" aria-label=""></span>Cos-mos</Link>
                 <ul className="collapse navbar-collapse right">
                     <li className="nav-item"> <NavLink exact to="/videoGames">My Media Library</NavLink></li>
                     <li className="nav-item"> <NavLink exact to="/videoGames/new">Add Item</NavLink></li>

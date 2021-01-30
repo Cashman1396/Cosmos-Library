@@ -1,4 +1,4 @@
-# Oracle Game Library
+# Cos-mos - The Vast Library
 Click [here](https://github.com/Cashman1396/React-Redux_VideoGameAPI) to go to the API code
 
 # Getting Started with Create React App
